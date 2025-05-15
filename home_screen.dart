@@ -1,0 +1,180 @@
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:flutter/material.dart';
+import 'package:just_audio/just_audio.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:permission_handler/permission_handler.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import 'sos_alert_screen.dart'; // your SosScreen file
+
+class Contact {
+  String name;
+  String phone;
+
+  Contact({required this.name, required this.phone});
+
+  Map<String, dynamic> toJson() => {'name': name, 'phone': phone};
+  factory Contact.fromJson(Map<String, dynamic> json) =>
+      Contact(name: json['name'], phone: json['phone']);
+}
+
+class HomeScreen extends StatefulWidget {
+  HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  final AudioPlayer player = AudioPlayer();
+  List<Contact> contacts = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadContacts();
+    _requestPermissions(); // Updated to request all needed permissions
+  }
+
+  Future<void> _requestPermissions() async {
+    // Request all permissions needed for the app
+    await [
+      Permission.location,
+      Permission.sms,
+      Permission.notification, // For Android 13+
+    ].request();
+
+    // Additionally request Geolocator's permission
+    await Geolocator.requestPermission();
+  }
+
+  Future<void> _loadContacts() async {
+    final prefs = await SharedPreferences.getInstance();
+    final String? contactsJson = prefs.getString('contacts');
+    if (contactsJson != null) {
+      final List<dynamic> contactList = jsonDecode(contactsJson);
+      setState(() {
+        contacts = contactList.map((e) => Contact.fromJson(e)).toList();
+      });
+    }
+  }
+
+  Future<Position?> _determinePosition() async {
+    bool serviceEnabled;
+    LocationPermission permission;
+
+    // Check if location services are enabled
+    serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Location services are disabled')),
+      );
+      return null;
+    }
+
+    // Check location permission
+    permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.denied) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Location permissions denied')),
+        );
+        return null;
+      }
+    }
+
+    if (permission == LocationPermission.deniedForever) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Location permissions permanently denied, please enable in settings'),
+        ),
+      );
+      return null;
+    }
+
+    // Get current position
+    try {
+      return await Geolocator.getCurrentPosition();
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to get location: $e')),
+      );
+      return null;
+    }
+  }
+
+  Future<void> sendSOSNotification() async {
+    // Check notification permission for Android 13+
+    if (await Permission.notification.isDenied) {
+      final status = await Permission.notification.request();
+      if (status.isDenied) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Notification permission is required for proper operation')),
+        );
+      }
+    }
+
+    Position? position = await _determinePosition();
+
+    String locationLink = position != null
+        ? '\nLocation: https://maps.google.com/?q=${position.latitude},${position.longitude}'
+        : '';
+
+    final message = 'I need help! This is an emergency. $locationLink';
+
+    for (var contact in contacts) {
+      print('Sending SOS to ${contact.name} (${contact.phone}): $message');
+      // TODO: Integrate SMS sending API or method here
+    }
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('SOS Notification Sent!')),
+    );
+  }
+
+  void _onSosPressed() async {
+    try {
+      // Ensure notification permission is granted
+      if (await Permission.notification.isDenied) {
+        await Permission.notification.request();
+      }
+
+      await player.setAsset('assets/sounds/alarm.mp3');
+      await player.play();
+      await Future.delayed(const Duration(seconds: 3));
+      await player.stop();
+
+      await sendSOSNotification();
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const SosScreen()),
+      );
+    } catch (e) {
+      print('Error during SOS sequence: $e');
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const SosScreen()),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: contacts.isEmpty ? null : _onSosPressed,
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.red,
+            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+          ),
+          child: const Text('SOS', style: TextStyle(fontSize: 24)),
+        ),
+      ),
+    );
+  }
+}
