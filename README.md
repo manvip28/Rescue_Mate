@@ -40,16 +40,8 @@ The Emergency App addresses these challenges by empowering users with AI-guided 
 
 ## Screenshots
 
-![WhatsApp Image 2025-05-16 at 10 37 34 AM (2)](https://github.com/user-attachments/assets/cd60b3c3-13f8-4102-91f7-3f0276e07a23)
-![WhatsApp Image 2025-05-16 at 10 37 34 AM (1)](https://github.com/user-attachments/assets/1746d091-d11a-40a3-85ec-329c980cd144)
-![WhatsApp Image 2025-05-16 at 10 37 34 AM](https://github.com/user-attachments/assets/8ad990ac-8407-4e70-87d4-c084c8c0ef97)
-![WhatsApp Image 2025-05-16 at 10 37 35 AM (1)](https://github.com/user-attachments/assets/4b0fbef1-d550-4cd8-be93-9c750d535ddc)
-![WhatsApp Image 2025-05-16 at 10 37 35 AM](https://github.com/user-attachments/assets/f4e94b94-61f2-41a6-8dcc-fead5de7fece)
-![WhatsApp Image 2025-05-16 at 10 37 36 AM (1)](https://github.com/user-attachments/assets/8fd6fbd6-0938-477b-9176-c181f750def1)
-![WhatsApp Image 2025-05-16 at 10 37 36 AM](https://github.com/user-attachments/assets/2c94b3b7-624e-4314-9d67-b7c739fb9b71)
-![WhatsApp Image 2025-05-16 at 10 37 37 AM (1)](https://github.com/user-attachments/assets/4211bbb6-853f-4314-a579-3dc04e256faa)
-![WhatsApp Image 2025-05-16 at 10 37 37 AM](https://github.com/user-attachments/assets/8a280139-966a-4a49-b890-9627a0ca1757)
-![WhatsApp Image 2025-05-16 at 10 37 38 AM](https://github.com/user-attachments/assets/4394305c-417a-42ef-9e9c-fcaca4d1f4e5)
+
+
 
 
 
