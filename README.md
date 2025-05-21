@@ -39,8 +39,16 @@ The Emergency App addresses these challenges by empowering users with AI-guided 
 - **Data Storage**: Shared Preferences for local storage of emergency contacts
 
 ## Screenshots
-
-
+  <table>
+    <tr>
+      <td><img src="screenshots/screenshot_1" width="500" ></td>
+      <td><img src="screenshots/screenshot_2" width="500" ></td>>
+    </tr>
+    <tr>
+      <td><img src="screenshots/screenshot_4" width="500" ></td>
+      <td><img src="screenshots/screenshot_5" width="500" ></td>
+    </tr>
+  </table>
 
 
 
