@@ -42,16 +42,16 @@ The Emergency App addresses these challenges by empowering users with AI-guided 
 
   <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <!-- Example with 500px width - images will display side by side where space allows -->
-    <img src="screenshots/screenshot_1.jpeg" width="300">
-    <img src="screenshots/screenshot_2.jpeg" width="300">
-     <img src="screenshots/screenshot_3.jpeg" width="300">
-     <img src="screenshots/screenshot_4.jpeg" width="300">
-     <img src="screenshots/screenshot_5.jpeg" width="300">
-     <img src="screenshots/screenshot_6.jpeg" width="300">
-     <img src="screenshots/screenshot_7.jpeg" width="300">
-     <img src="screenshots/screenshot_8.jpeg" width="300">
-     <img src="screenshots/screenshot_9.jpeg" width="300">
-     <img src="screenshots/screenshot_10.jpeg" width="300">
+    <img src="screenshots/screenshot_1.jpeg" width="200">
+    <img src="screenshots/screenshot_2.jpeg" width="200">
+     <img src="screenshots/screenshot_3.jpeg" width="200">
+     <img src="screenshots/screenshot_4.jpeg" width="200">
+     <img src="screenshots/screenshot_5.jpeg" width="200">
+     <img src="screenshots/screenshot_6.jpeg" width="200">
+     <img src="screenshots/screenshot_7.jpeg" width="200">
+     <img src="screenshots/screenshot_8.jpeg" width="200">
+     <img src="screenshots/screenshot_10.jpeg" width="200">
+     <img src="screenshots/screenshot_9.jpeg" width="200">
   </div>
 
 
