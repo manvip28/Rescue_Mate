@@ -40,7 +40,7 @@ The Emergency App addresses these challenges by empowering users with AI-guided 
 
 ## Screenshots
 
-*[Screenshots will be added here]*
+<img width="613" alt="image" src="https://github.com/user-attachments/assets/522f9f68-30df-4e73-8224-cb923b6dd02c" />
 
 ## Installation
 
