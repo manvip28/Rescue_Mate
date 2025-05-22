@@ -97,12 +97,12 @@ The Emergency App addresses these challenges by empowering users with AI-guided 
 <a href="https://github.com/manvip28">
   <img src="https://github.com/manvip28.png" width="60" height="60" style="border-radius: 50%;" alt="Username3"/>
 </a>
-<a href="https://github.com/Hiht21">
-  <img src="https://github.com/Hiht21.png" width="60" height="60" style="border-radius: 50%;" alt="Username1"/>
-</a>
 <a href="https://github.com/nupursarkar05">
   <img src="https://github.com/nupursarkar05.png" width="60" height="60" style="border-radius: 50%;" alt="Username2"/>
 </a>
 <a href="https://github.com/sahana1511">
   <img src="https://github.com/sahana1511.png" width="60" height="60" style="border-radius: 50%;" alt="Username3"/>
+</a>
+<a href="https://github.com/Hiht21">
+  <img src="https://github.com/Hiht21.png" width="60" height="60" style="border-radius: 50%;" alt="Username1"/>
 </a>
