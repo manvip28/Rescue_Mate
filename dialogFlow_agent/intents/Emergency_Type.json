@@ -1,0 +1,58 @@
+{
+  "id": "f45dc196-1708-4b1f-ba1c-4a5809e22eaf",
+  "name": "Emergency_Type",
+  "auto": true,
+  "contexts": [
+    "conversation_started"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "emergency_identified",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "3a27e72c-8b54-4e38-933b-8c43b4d5aef8",
+          "name": "emergency_type",
+          "required": false,
+          "dataType": "@emergency_type",
+          "value": "$emergency_type",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I understand this is a $emergency_type emergency. I\u0027ll guide you through this. First, are you in a safe location?",
+            "This sounds like a $emergency_type situation. Before we proceed, are you and the patient in a safe place?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

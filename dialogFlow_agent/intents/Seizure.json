@@ -1,0 +1,40 @@
+{
+  "id": "2a9b8c7d-6e5f-4d3c-2b1a-9f8e7d6c5b4a",
+  "name": "Seizure",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "seizure_emergency",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "For a seizure: 1) Clear the area of dangerous objects 2) Do NOT restrain the person or put anything in their mouth 3) Gently roll them onto their side if possible 4) Time the seizure - call emergency services if it lasts more than 5 minutes 5) Stay with them until they\u0027re fully conscious. After the seizure ends, place them in the recovery position."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

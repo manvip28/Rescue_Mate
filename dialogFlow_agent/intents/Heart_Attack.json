@@ -1,0 +1,40 @@
+{
+  "id": "9c376dc5-5cfa-45c2-9fe3-9662f9a5e0e0",
+  "name": "Heart_Attack",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "heart_attack_emergency",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "For a suspected heart attack: 1) Call emergency services immediately 2) Have the person sit down and rest 3) If available and the person is not allergic, give aspirin to chew 4) Loosen tight clothing 5) Be prepared to perform CPR if they become unconscious. Would you like me to connect you to emergency services now?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "8a5b3c2d-1e0f-9d8c-7b6a-5f4e3d2c1b0a",
+  "name": "Unconscious_Person",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "unconscious_person_emergency",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "For an unconscious person: 1) Check for breathing and pulse 2) If not breathing, begin CPR immediately 3) Place them in recovery position if breathing 4) Call emergency services right away 5) Check for medical ID or alert jewelry that might explain the cause. Would you like detailed CPR instructions?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

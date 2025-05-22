@@ -1,0 +1,76 @@
+[
+  {
+    "data": [
+      {
+        "text": "A child is ",
+        "userDefined": false
+      },
+      {
+        "text": "choking",
+        "meta": "@emergency_type",
+        "alias": "emergency_type",
+        "userDefined": false
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "food",
+        "meta": "@emergency_type",
+        "alias": "emergency_type1",
+        "userDefined": false
+      },
+      {
+        "text": ". What shall I do?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "A child is ",
+        "userDefined": false
+      },
+      {
+        "text": "choking",
+        "meta": "@emergency_type",
+        "alias": "emergency_type",
+        "userDefined": false
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "food",
+        "meta": "@emergency_type",
+        "alias": "emergency_type1",
+        "userDefined": false
+      },
+      {
+        "text": ". ",
+        "userDefined": false
+      },
+      {
+        "text": "What shall",
+        "meta": "@emergency_type",
+        "alias": "emergency_type1",
+        "userDefined": false
+      },
+      {
+        "text": " I do?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "data": [
+      {
+        "text": "a ",
+        "userDefined": false
+      },
+      {
+        "text": "child",
+        "meta": "@sys.person",
+        "alias": "person",
+        "userDefined": false
+      },
+      {
+        "text": " is having ",
+        "userDefined": false
+      },
+      {
+        "text": "seizure",
+        "meta": "@emergency_type",
+        "alias": "emergency_type",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 6,
+    "lang": "en",
+    "updated": 0
+  }
+]

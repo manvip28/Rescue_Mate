@@ -1,0 +1,40 @@
+{
+  "id": "834d6c91-7e58-49a2-b5e1-3f2c98d7a6b5",
+  "name": "Choking",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "choking_emergency",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "For choking: 1) Stand behind the person and wrap your arms around their waist 2) Make a fist with one hand and place it above their navel 3) Grab your fist with the other hand 4) Pull inward and upward with quick thrusts 5) Repeat until the object is dislodged. If they become unconscious, lower them to the ground and call emergency services immediately."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "eba498e5-8e53-4c6a-9865-d3c132f4c457",
+  "name": "Welcome",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "conversation_started",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Welcome to Medical Emergency Assistant. I can help you with emergency guidance, connect you to emergency services, or provide first aid instructions. What kind of emergency are you experiencing?",
+            "I\u0027m your Medical Emergency Assistant. Tell me what\u0027s happening so I can help you with first aid instructions or connect you to emergency services."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

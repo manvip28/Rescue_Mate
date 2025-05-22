@@ -1,0 +1,122 @@
+[
+  {
+    "value": "Heart attack",
+    "synonyms": [
+      "Heart attack",
+      "Cardiac arrest",
+      "Myocardial infarction",
+      "Heart pain",
+      "Chest pain"
+    ]
+  },
+  {
+    "value": "Stroke",
+    "synonyms": [
+      "Stroke",
+      "Brain attack",
+      "Cerebrovascular accident",
+      "CVA",
+      "Brain blockage"
+    ]
+  },
+  {
+    "value": "Choking",
+    "synonyms": [
+      "Choking",
+      "Airway blockage",
+      "Can\u0027t breathe",
+      "Something stuck in throat",
+      "Food lodged in airway"
+    ]
+  },
+  {
+    "value": "Bleeding",
+    "synonyms": [
+      "Bleeding",
+      "Hemorrhage",
+      "Blood loss",
+      "Wound bleeding",
+      "Cut with blood"
+    ]
+  },
+  {
+    "value": "Burn",
+    "synonyms": [
+      "Burn",
+      "Scalding",
+      "Fire injury",
+      "Chemical burn",
+      "Heat burn"
+    ]
+  },
+  {
+    "value": "Fracture",
+    "synonyms": [
+      "Fracture",
+      "Broken bone",
+      "Broken arm",
+      "Broken leg",
+      "Bone injury"
+    ]
+  },
+  {
+    "value": "Allergic reaction",
+    "synonyms": [
+      "Allergic reaction",
+      "Anaphylaxis",
+      "Severe allergy",
+      "Allergy attack",
+      "Allergic response"
+    ]
+  },
+  {
+    "value": "Seizure",
+    "synonyms": [
+      "Seizure",
+      "Convulsion",
+      "Epileptic fit",
+      "Fit",
+      "Shaking uncontrollably"
+    ]
+  },
+  {
+    "value": "Unconsciousness",
+    "synonyms": [
+      "Unconsciousness",
+      "Passed out",
+      "Fainted",
+      "Unresponsive",
+      "Not waking up"
+    ]
+  },
+  {
+    "value": "Breathing difficulty",
+    "synonyms": [
+      "Breathing difficulty",
+      "Shortness of breath",
+      "Can\u0027t breathe",
+      "Dyspnea",
+      "Labored breathing"
+    ]
+  },
+  {
+    "value": "Poisoning",
+    "synonyms": [
+      "Poisoning",
+      "Ingested toxin",
+      "Swallowed poison",
+      "Chemical ingestion",
+      "Drug overdose"
+    ]
+  },
+  {
+    "value": "Head injury",
+    "synonyms": [
+      "Head injury",
+      "Head trauma",
+      "Brain injury",
+      "Concussion",
+      "Head wound"
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "data": [
+      {
+        "text": "56 year old",
+        "meta": "@sys.age",
+        "alias": "age",
+        "userDefined": false
+      },
+      {
+        "text": " man cannot breathe",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "Chest pains",
+        "meta": "@emergency_type",
+        "alias": "emergency_type",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  }
+]
