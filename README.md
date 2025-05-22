@@ -91,9 +91,7 @@ The Emergency App addresses these challenges by empowering users with AI-guided 
 - `shared_preferences`: For local data storage
 - `dialogflow_flutter`: For integrating Dialogflow AI chatbot
 
-## Collabrators 
-## Contributors
-
+## Collaborators 
 <a href="https://github.com/manvip28">
   <img src="https://github.com/manvip28.png" width="60" height="60" style="border-radius: 50%;" alt="Username3"/>
 </a>
