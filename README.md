@@ -1,4 +1,4 @@
-# Emergency App
+# Resue Mate
 
 A Flutter mobile application designed to assist users during emergencies by providing quick access to essential services and information, powered by AI and real-time location features.
 
